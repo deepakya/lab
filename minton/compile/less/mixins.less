@@ -1,0 +1,8 @@
+@import 'mixins/vendors.less';
+
+.text-color(@colorname) {
+  @color: ~"@{colorname}";
+  .text-@{color}{
+    color: @@color;
+  }
+}

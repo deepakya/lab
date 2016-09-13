@@ -1,0 +1,129 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+html {
+	position: relative;
+	min-height: 100%;
+	height: 100%;
+}
+body {
+	height: 100%;
+	color: @text-color;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.main-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+	background-color: @white-f5;
+}
+
+.site-logo {
+	padding: 6px 12px;
+	border-bottom: 1px solid @dark-color-3;
+	display: block;
+	color: @primary-color;
+	font-size: 16px;
+}
+
+.main-content {
+	height: 100%;
+	position: relative;
+	@media (min-width: @screen-xs) {
+		position: absolute;
+	}
+	left: 190px;
+	right: 0;
+	background-color: @white-f5;
+	.transition(all 0.2s ease-in-out);
+	.hide-sidebar & {
+		left: 0;
+	}
+}
+
+.footer {
+	width: 100%;
+	padding: 10px 0;
+	padding-left: 195px;
+	border-top: 1px solid @border-color;
+	background-color: lighten(@white-f5, 1.5%);
+}
+
+.topbar {
+	width: 100%;
+	min-height: 55px;
+	padding: 8px 12px;
+	color: @white;
+	background-color: @primary-color;
+	a,
+	button {
+		color: @white;
+	}
+	.fa-cog {
+		font-size: 20px;
+	}
+	&-inner {
+		background-color: inherit;
+		width: 100%;
+		padding-left: 50px;
+		display: none;
+		@media (max-width: @screen-xs-max) {
+			padding-right: 50px;
+		}
+		@media (min-width: @screen-sm-min) {
+			display: inline-block;
+		}
+		.input-has-icon {
+			color: @white;
+			.form-control {
+				border: 0;
+				color: @white;
+				.placeholder(@white);
+				background-color: fade(@white, 20%);
+			}
+		}
+	}
+	.topbar-toggle {
+		position: absolute;
+		right: 10px;
+		top: 5px;
+	}
+	.list-inline {
+		margin-bottom: 0;
+		li {
+			margin-left: 2px;
+			@media (max-width: @screen-sm-min) {
+				line-height: 2;
+			}
+		}
+	}
+}
+
+.secondary-bar {
+	padding: 14px 12px;
+	margin-bottom: 25px;
+	.box-shadow(0 1px 6px fade(@dark-color, 20%));
+	background-color: @white;
+}
+
+.table-text {
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+	color: @grey;
+	td {
+		font-size: 13px;
+		img {
+			margin-bottom: 0;
+		}
+	}
+	b {
+		display: block;
+		font-size: 14px;
+	}
+}
+
+.text-big {
+	font-size: 24px;
+}

@@ -1,0 +1,59 @@
+@import 'components/sidebar.less';
+@import 'components/cards.less';
+
+.btn-icon {
+	background: transparent;
+	border: 0;
+	padding: 6px 12px;
+	color: @text-color;
+	display: inline-block;
+	&:active {
+		.scale(0.9);
+		.transition(all 0.2s ease);
+	}
+}
+
+.oval {
+	.border-radius(35px);
+}
+
+.input-has-icon {
+	position: relative;
+	.form-control {
+		padding-right: 35px;
+	}
+	.input-icon {
+		position: absolute;
+		right: 15px;
+		top: 0;
+		line-height: 34px;
+	}
+}
+
+.img-full {
+	width: 100%;
+	height: auto;
+}
+
+.label-purple {
+  .label-variant(@purple);
+}
+
+.row-gutter {
+	padding-left: 8px;
+	padding-right: 8px;
+	[class^="col-"] {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+}
+
+.table {
+	thead>tr>th {
+		color: lighten(@black, 40%);
+	}
+	tbody>tr>td {
+		color: @grey;
+		font-size: 13px;
+	}
+}
