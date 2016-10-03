@@ -1,0 +1,104 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.pusher {
+  body.pushable & {
+    background: @white-f5;
+  }
+  .ui.menu {
+    a {
+    color: @white;
+    }
+  }
+  .top.menu {
+    background: @blue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    input {
+      border-radius: 30px;
+      border: 0;
+      background-color: fade(@white,30%);
+      color: @white;
+      & + .icon {
+        color: @white !important;
+      }
+      &::-webkit-input-placeholder {
+        color: @white;
+      }
+      &:-moz-input-placeholder {
+        color: @white;
+      }
+      &::-moz-input-placeholder {
+        color: @white;
+      }
+      &:-ms-input-placeholder {
+        color: @white;
+      }
+    }
+    .circular {
+      top: 0;
+    }
+    .ui.dropdown {
+      background-color: transparent;
+      color: @white;
+    }
+    + .secondary {
+      background: @white;
+    }
+  }
+}
+
+.ui.vertical.menu {
+  width: 100%;
+  max-width: 260px;
+  background:@dark-color;
+  &.sidebar {
+    background:@dark-color;
+  }
+  .logo {
+    display: block;
+    text-align: center;
+  }
+  .item {
+    &:before {
+      content: none;
+    }
+    &-logo {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      background-color: @dark-color-1;
+    }
+    .header {
+      margin-bottom: 0 !important;
+      color: @text-color;
+    }
+  }
+  .menu {
+    .item {
+      padding-top: 1.2em;
+      padding-bottom: 1.2em;
+      border-left: 1px solid transparent;
+      font-size: 1em;
+      &.active {
+        border-left: 1px solid @blue;
+        background-color: @dark-color-1;
+        .icon {
+          color: @blue;
+        }
+      }
+    }
+  }
+  .icons-left {
+   i.icon {
+    float: left;
+    margin-right: 0.5em;
+   }
+  }
+  .user-status.item {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+}

@@ -1,0 +1,92 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.metro-cards {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.progress-cards {
+  >.column {
+    @media (min-width: 768px) and (max-width:991px) {
+      width: 50% !important;
+    }
+  }
+  .metro-item {
+    .content {
+      text-align: right;
+    }
+  }
+  .ui.statistic {
+    align-items: flex-end;
+    .value {
+      font-size: 2rem!important
+    }
+    .label {
+      font-size: 0.8em;
+      color: @grey-2;
+    }
+  }
+}
+
+.weather-cards {
+  ul {
+    >li {
+      height: 35px;
+      color: @grey;
+    }
+  }
+}
+
+.avatar-meta {
+  display: inline-block;
+  li {
+    width: 100%;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    display: list-item;
+  }
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.none-transform {
+  text-transform: none;
+}
+
+ul.list-reset {
+  padding: 0!important;
+  margin: 0!important;
+  list-style-type: none!important;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  &.green {
+    background: @green;
+  }
+}

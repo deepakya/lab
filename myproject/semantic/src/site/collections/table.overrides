@@ -1,0 +1,19 @@
+/*******************************
+         Site Overrides
+*******************************/
+.tabular-cards {
+  .table {
+    thead {
+      th {
+        text-transform: capitalize;
+      }
+    }
+    tbody {
+      td {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: @grey;
+      }
+    }
+  }
+}

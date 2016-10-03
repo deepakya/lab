@@ -1,0 +1,30 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+.graph-cards {
+  .ui.card {
+    width: 100%;
+    .column {
+      text-align: center;
+    }
+    .content {
+      border-top: 0 !important;
+      .header {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .ui.statistic {
+    align-items: center;
+    .label {
+      color: @grey;
+      text-transform: capitalize;
+    }
+    .value {
+      color: @grey;
+      margin-top: 3px;
+      font-size: 1rem !important;
+    }
+  }
+}
